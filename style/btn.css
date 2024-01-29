@@ -1,0 +1,13 @@
+.btn {
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  color: #365ABA;
+  font-size: 34px;
+}
+
+.btn--castling {  
+  background-color: #365ABA;
+  color: #FFFFFF;
+}
+

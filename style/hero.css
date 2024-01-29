@@ -1,0 +1,35 @@
+.hero {
+  padding: 20px 0;
+  flex-grow: 1;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.hero__title {
+  margin-bottom: 24px;
+  font-family: Aclonica;
+  font-size: 312px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /*word-wrap: break-word;*/
+}
+
+.hero__slogan {
+  margin-bottom: 135px;
+  max-width: 940px;
+  font-size: 46px;
+  line-height: normal;
+  text-align: center;
+}
+
+.hero__steps {
+
+}
+
+
