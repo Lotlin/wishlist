@@ -1,6 +1,5 @@
 .edit {
   padding-bottom: 174px;
-
 }
 
 .edit__avatar {
@@ -15,18 +14,17 @@
   width: 100%;
   max-width: 437px;
   border-radius: 50%;
-
 }
 
 .edit__avatar-control {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  row-gap: 12px;
   font-size: 38px;
 }
 
 .edit__label-avatar {
-  margin-bottom: 11px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,6 +115,7 @@
   appearance: none;
   background-color: #FFFFFF;
   border-radius: 15px;
+  border: none;
   color: #282828;
   cursor: pointer;
   outline: none;
@@ -124,10 +123,6 @@
 
 .edit__description {
   margin-bottom: 68px;
-}
-
-.edit__label-description {
-
 }
 
 .edit__description-textarea {
@@ -148,10 +143,6 @@
   margin-right: 0;
 }
 
-.edit--wish {
-
-}
-
 .edit__wish {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -169,10 +160,6 @@
   flex: 0 1 50%;
 }
 
-.edit__label-select {
-
-}
-
 .edit__select--currency {
   width: 100%;
   height: 100px;
@@ -182,12 +169,6 @@
   position: relative;
   margin-bottom: 152px;
   width: 285px;
-  height: 285px;
-}
-
-.edit__label-photo {
-  
-  
 }
 
 .edit__wish-img {
@@ -204,6 +185,296 @@
   right: 8px;
 }
 
-.edit__delete-btn {
+@media (max-width: 1200px) {
+  .edit__avatar {
+    margin-bottom: 56px;
+  }
 
+  .edit__avatar-img {
+    margin-right: 34px;
+    max-width: 466px;
+  }
+
+  .edit__name {
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 686px;
+    margin-bottom: 30px;
+  }
+
+  .edit__birthday {
+    margin-bottom: 40px;
+  }
+
+  .edit__description {
+    margin-bottom: 40px;
+  }
+  
+  .edit__description-textarea {
+    max-width: 980px;
+    min-height: 311px;
+  }
+  
+  .edit__submit-btn {
+    margin-right: 18px;
+  }
+
+  .edit__wish {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    margin-bottom: 44px;
+  }
+
+  .edit__wish-photo {
+    margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 992px) {
+  .edit {
+    padding-bottom: 80px;
+  }
+
+  .edit__container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .edit__avatar {
+    margin-bottom: 68px;
+  }
+
+  .edit__avatar-img {
+    margin-right: 25px;
+    max-width: 340px;
+  }
+
+  .edit__avatar-control {
+    font-size: 24px;
+    row-gap: 24px;
+  }
+
+  .edit__label-avatar {
+    column-gap: 5px;
+  }
+
+  .edit__icon-avatar {
+    width: 30px;
+  }
+
+  .edit__name {
+    row-gap: 44px;
+    max-width: 700px;
+    margin-bottom: 44px;
+  }
+
+  .edit__label {
+    max-width: 700px;
+  }
+
+  .edit__label-wish {
+    max-width: 700px;
+  }
+
+  .edit__input {
+    padding: 22px 32px;
+  }
+
+  .edit__birthday {
+    margin-bottom: 44px;
+  }
+
+  .edit__description {
+    margin-bottom: 62px;
+  }
+
+  .edit__description-textarea {
+    max-width: 700px;
+    min-height: 430px;
+  }
+
+  .edit__wish {
+    row-gap: 44px;
+    margin-bottom: 80px;
+  }
+
+  .edit__wish-price {
+    column-gap: 40px;
+  }
+
+  .edit__wish-photo {
+    margin-bottom: 62px;
+  }
+
+  .edit__submit-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+  }
+
+  .edit__submit-btn {
+    max-width: 310px;
+    width: 100%;
+  }
+
+  .edit__submit-btn:last-child {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .edit__delete-btn {
+    max-width: 310px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+.edit {
+  padding-top: 16px;
+  padding-bottom: 46px;
+}
+
+.edit__container {
+  max-width: 320px;
+}
+
+.edit__avatar {
+  margin-bottom: 32px;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.edit__avatar-img {
+  margin: 0;
+  max-width: 160px;
+}
+
+.edit__avatar-control {
+  align-items: center;
+  row-gap: 16px;
+  font-size: 14px;
+}
+
+.edit__label-avatar {
+  column-gap: 6px;
+}
+
+.edit__avatar-delete {
+  column-gap: 6px;
+}
+
+.edit__icon-avatar {
+  flex-basis: 16px;
+}
+
+.edit__name {
+  row-gap: 24px;
+  max-width: 288px;
+  margin-bottom: 24px;
+}
+
+.edit__label {
+  max-width: 288px;
+}
+
+.edit__label-wish {
+  max-width: 288px;
+}
+
+.edit__label-text {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.edit__input {
+  height: 47px;
+  padding: 12 18px;
+  font-size: 20px;
+}
+
+.edit__birthday {
+  margin-bottom: 24px;
+  column-gap: 6px;
+}
+
+.edit__label--select {
+  font-size: 20px;
+}
+
+.edit__label--select::after {
+  width: 18px;
+  height: 18px;
+}
+
+.edit__select {
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.edit__description {
+  margin-bottom: 32px;
+}
+
+.edit__description-textarea {
+  max-width: 288px;
+  min-height: 250px;
+  padding: 32px 16px 26px;
+  border-radius: 15px;
+  font-size: 38px;
+  resize: none;
+}
+
+.edit__submit-btn {
+  margin-right: 0;
+}
+
+.edit__wish {
+  row-gap: 24px;
+  margin-bottom: 46px;
+}
+
+.edit__wish-price {
+  column-gap: 14px;
+}
+
+.edit__label--price {
+  flex: 0 1 50%;
+}
+
+.edit__select--currency {
+  width: 100%;
+  height: 47px;
+  border-radius: 15px;
+}
+
+.edit__wish-photo {
+  margin-bottom: 32px;
+  width: 288px;
+}
+
+.edit__wish-img {
+  width: 100%;
+}
+
+.edit__wish-delete {
+  top: 10px;
+  right: 10px;
+}
+
+.edit__submit-wrapper {
+  row-gap: 24px;
+}
+
+.edit__submit-btn {
+  max-width: 288px;
+}
+
+.edit__submit-btn:last-child {
+  display: inline;
+  margin: 0;
+}
+
+.edit__delete-btn {
+  max-width: 288px;
+}
 }

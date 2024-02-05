@@ -6,8 +6,33 @@
   font-size: 34px;
 }
 
+.btn:last-child {
+  margin-bottom: 0;
+};
+
 .btn--castling {  
   background-color: #365ABA;
   color: #FFFFFF;
 }
 
+@media (max-width: 1700px) {
+  .btn {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .btn {
+    font-size: 20px;
+  }
+
+  .btn--castling {  
+    font-size: 24px;
+  }
+}

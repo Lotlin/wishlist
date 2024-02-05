@@ -3,3 +3,28 @@
   max-width: 1792px;
   padding: 0 40px;
 }
+
+@media (max-width: 1700px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 34px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
